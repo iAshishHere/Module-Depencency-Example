@@ -21,13 +21,3 @@ module "Storage2" {
 output "StorageName" {
   value = module.Storage2.*.name
 }
-
-
-#terraform init -backend-config="env/test.config"
-
-#terraform plan -var-file="env/env/test.tfvars"
-
-#terraform apply -var-file="env/dev/dev.tfvars"
-
-#terraform destroy -var-file="env/dev/dev.tfvars"
-
